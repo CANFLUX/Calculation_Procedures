@@ -1,16 +1,53 @@
-# Written by June Skeeter (edited by Zoran)
-# May 2024
+# Written by June Skeeter
+# March 2024
 
 # Dec 17, 2024 (Zoran)
 #    - Added northOffset: 195 based on ghg Metadata.
+# Mar 31, 2025 (Paul)
+#    - Added ThirdStage processing options
 
 Metadata:
   siteID: DSM
   estYear: 2021 
-  lat: 49.08875
+  lat: 49.08875         
   long: -122.895361
-  TimeZoneHour: -8
+  TimeZoneHour: -8      # UTC/GMT minus local timezone (e.g., for Pacific standard time, TimeZoneHour = 0 - 8 = -8)
   northOffset: 195
+Processing:
+  ThirdStage:
+    Fluxes:
+      # Names of flux variables as they come in from second stage
+      # Putting NULL will remove the flux from consideration
+      H: H
+      LE: LE
+      NEE: FC
+      FCH4: FCH4
+    JS_Moving_Z:
+      Run: True
+    Papale_Spike_Removal:
+      Run: True
+    Storage_Correction: 
+      Run: True
+    REddyProc:
+      Run: TRUE
+      vars_in:
+        NEE: NEE
+        LE: LE
+        H: H
+        FCH4: FCH4
+        Rg: SW_IN_1_1_1
+        Tair: TA_1_1_1
+        VPD: VPD_1_1_1
+        Ustar: USTAR
+        season: season
+      MDSGapFill:
+        basic:
+          - Rg
+          - Tair
+          - VPD
+      Flux_Partitioning:
+        # Turn flux partitioning calculations off to reduce third stage run time for diagnosing errors.
+        # Turn flux partitioning calculations off if GPP and Reco are not wanted.
+        Run: True
 
-
-
+      
