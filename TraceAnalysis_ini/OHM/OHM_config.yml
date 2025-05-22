@@ -10,6 +10,7 @@ Metadata:
   long: -97.123
   TimeZoneHour: -6
   northOffset: 360
+  AmerifluxID: CA-EM3
 Processing:
   ThirdStage:
     Fluxes:

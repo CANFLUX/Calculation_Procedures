@@ -1,6 +1,8 @@
 # Written by Sara Knox
 # March 2024
 
+# May 22, 2025 (Zoran)
+#   - Added AmerifluxID.
 # Dec 17, 2024 (Zoran)
 #    - Added northOffset: 0 based on ghg Metadata.
 
@@ -11,6 +13,7 @@ Metadata:
   long: -100.534
   TimeZoneHour: -6
   northOffset: 0
+  AmerifluxID: CA-EM2
 Processing:
   ThirdStage:
     Fluxes:
