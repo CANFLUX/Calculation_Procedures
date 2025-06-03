@@ -13,6 +13,7 @@ Metadata:
   long: -122.895361
   TimeZoneHour: -8      # UTC/GMT minus local timezone (e.g., for Pacific standard time, TimeZoneHour = 0 - 8 = -8)
   northOffset: 195
+  AmerifluxID: CA-DSM
 Processing:
   ThirdStage:
     Fluxes:

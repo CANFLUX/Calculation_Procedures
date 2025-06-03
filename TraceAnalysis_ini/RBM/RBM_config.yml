@@ -6,6 +6,7 @@ Metadata:
   long: -123.196366
   TimeZoneHour: -8
   northOffset: 180
+  AmerifluxID: CA-RBM
 Processing:
   ThirdStage:
     Fluxes:
