@@ -1,0 +1,151 @@
+Ameriflux QAQC information,,,,,,,,,,,,,,,,,,
+"Extracted from variable ""FP_ls"" when running amf_chk_run.R/amfqaqc_main.R",,,,,,,,,,,,,,,,,,
+Rosie Howard,,,,,,,,,,,,,,,,,,
+12-Mar-25,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,Name,Description,Units,Min,Max,Max_buff,Min_buff,Range,N,Sites,q001.01,q001.min,q999.99,q999.max,IQR.01,IQR.min,IQR.99,IQR.max
+1,ALB,"Albedo, range 0-100",%,0,100,105,-5,100,35,35,-1.83E-15,-2.78E-15,1.00E+02,1.00E+02,2.47E+00,2.42362826,61.7406831,61.8427774
+2,APAR,Absorbed PAR,µmolPhoton m-2 s-1,0,2300,2415,-115,2300,6,5,-8.80E+00,-9.26E+00,2.16E+03,2.16E+03,2.43E+02,241.6,619.192879,619.22808
+3,CH4,Methane (CH4) mole fraction in wet air,nmolCH4 mol-1,0,15000,15750,-750,15000,56,45,4.83E+02,-2.26E+01,1.22E+04,1.45E+04,2.32E+01,23.02905706,382.7079663,414.5448095
+4,CH4_MIXING_RATIO,Methane (CH4) in mole fraction of dry air,nmolCH4 mol-1,0,15000,15750,-750,15000,56,24,1.80E+03,1.79E+03,8.11E+03,8.37E+03,1.84E+01,18.34696797,389.9231364,569.8597959
+5,CO,Carbon Monoxide (CO) mole fraction in wet air,nmolCO mol-1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+6,CO2,Carbon Dioxide (CO2) mole fraction in wet air,µmolCO2 mol-1,150,1200,1252.5,97.5,1050,867,339,1.97E+02,-5.37E+00,1.03E+03,1.21E+03,7.14E+00,6.1965227,82.3266164,208.1471544
+7,CO2_MIXING_RATIO,Carbon Dioxide (CO2) in mole fraction of dry air,µmolCO2 mol-1,150,1200,1252.5,97.5,1050,495,76,2.57E+02,2.17E+02,8.54E+02,1.17E+03,6.86E+00,5.81247733,93.8704161,212.3561715
+8,CO2_SIGMA,Standard deviation of carbon dioxide mole fraction in wet air,µmolCO2 mol-1,0,150,157.5,-7.5,150,29,28,0.00E+00,0.00E+00,1.52E+02,1.52E+02,2.56E-03,0.0024,7.5619608,7.5945035
+9,CO2C13,"Stable isotopic composition of CO2 - C13 (i.e., d13C of CO2)",‰ (permil),NA,-6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+10,COND_WATER,"Conductivity (i.e., electrical conductivity) of water",µS cm-1,0,10000,10500,-500,10000,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+11,D_SNOW,Snow depth,cm,0,500,525,-25,500,39,32,-1.81E+01,-2.17E+01,3.36E+02,3.75E+02,5.13E-01,0,149.0785368,149.3105432
+12,DBH,Diameter of tree measured at breast height (1.3m) with continuous dendrometers,cm,0,500,525,-25,500,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+13,DO,Dissolved oxygen in water,µmol L-1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+14,EVI,Enhanced Vegetation Index,nondimensional,-1,1,1.1,-1.1,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+15,FAPAR,"Fraction of absorbed PAR, range 0-100",%,0,100,105,-5,100,5,5,-3.23E+00,-3.24E+00,9.80E+01,9.80E+01,8.53E+01,85.15,90.3616,90.37
+16,FC,Carbon Dioxide (CO2) turbulent flux (no storage correction),µmolCO2 m-2 s-1,-100,100,110,-110,200,422,370,-1.20E+02,-2.03E+02,1.19E+02,1.83E+02,3.17E-01,0.24228946,12.284678,28.916
+17,FC_SSITC_TEST,"Results of the quality flagging for FC according to Foken et al 2004, based on a combination of Steady State and Integral Turbulence Characteristics tests by Foken and Wichura (1996) (i.e., 0, 1, 2)",nondimensional,0,2,2.1,-0.1,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+18,FCH4,Methane (CH4) turbulent flux (no storage correction),nmolCH4 m-2 s-1,-500,4000,4225,-725,4500,71,49,-3.19E+03,-3.49E+03,4.64E+03,5.29E+03,3.23E+00,1.6376985,277.303335,341.62
+19,FCH4_SSITC_TEST,"Results of the quality flagging for FCH4 according to Foken et al 2004, based on a combination of Steady State and Integral Turbulence Characteristics tests by Foken and Wichura (1996) (i.e., 0, 1, 2)",nondimensional,0,2,2.1,-0.1,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+20,FETCH_70,Distance at which cross-wind integrated footprint cumulative probability is 70%,m,0,10000,10500,-500,10000,58,56,1.74E+00,6.22E-02,9.45E+03,9.58E+03,4.31E+00,3.9607,419.2084984,552.635
+21,FETCH_80,Distance at which cross-wind integrated footprint cumulative probability is 80%,m,0,12000,12600,-600,12000,28,26,4.92E-02,4.44E-02,5.61E+03,5.99E+03,5.55E+00,4.74,554.011845,661.3575
+22,FETCH_90,Distance at which cross-wind integrated footprint cumulative probability is 90%,m,0,15000,15750,-750,15000,118,116,7.64E-04,0.00E+00,1.16E+04,2.17E+04,6.93E+00,5.93385,1109.843876,1898.3765
+23,FETCH_FILTER,"Footprint quality flag (i.e., 0, 1): 0 and 1 indicate data measured when wind coming from direction that should be discarded and kept, respectively",nondimensional,0,1,1.05,-0.05,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+24,FETCH_MAX,Distance at which footprint contribution is maximum,m,0,5000,5250,-250,5000,111,109,1.20E-04,-1.20E-01,3.84E+03,3.95E+03,2.52E+00,2.16625,175.356,302.2625
+25,FH2O,Water vapor (H2O) turbulent flux (no storage correction),mmolH2O m-2 s-1,-10,20,21.5,-11.5,30,14,13,-7.17E+00,-7.20E+00,1.13E+01,1.13E+01,2.07E-01,0.15672135,1.2569539,1.259185
+26,FIPAR,"Fraction of intercepted PAR, range 0-100",%,0,100,105,-5,100,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+27,FN2O,Nitrous oxide (N2O) turbulent flux (no storage correction),nmolN2O m-2 s-1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+28,FN2O_SSITC_TEST,"Results of the quality flagging for FN2O according to Foken et al 2004, based on a combination of Steady State and Integral Turbulence Characteristics tests by Foken and Wichura (1996) (i.e., 0, 1, 2)",nondimensional,0,2,2.1,-0.1,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+29,FNO,Nitric oxide (NO) turbulent flux (no storage correction),nmolNO m-2 s-1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+30,FNO_SSITC_TEST,"Results of the quality flagging for FNO according to Foken et al 2004, based on a combination of Steady State and Integral Turbulence Characteristics tests by Foken and Wichura (1996) (i.e., 0, 1, 2)",nondimensional,0,2,2.1,-0.1,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+31,FNO2,Nitrogen dioxide (NO2) turbulent flux (no storage correction),nmolNO2 m-2 s-1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+32,FNO2_SSITC_TEST,"Results of the quality flagging for FNO2 according to Foken et al 2004, based on a combination of Steady State and Integral Turbulence Characteristics tests by Foken and Wichura (1996) (i.e., 0, 1, 2)",nondimensional,0,2,2.1,-0.1,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+33,FO3,Ozone (O3) turbulent flux (no storage correction),nmolO3 m-2 s-1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+34,FO3_SSITC_TEST,"Results of the quality flagging for FO3 according to Foken et al 2004, based on a combination of Steady State and Integral Turbulence Characteristics tests by Foken and Wichura (1996) (i.e., 0, 1, 2)",nondimensional,0,2,2.1,-0.1,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+35,G,Soil heat flux,W m-2,-250,400,432.5,-282.5,650,678,293,-1.64E+02,-3.62E+02,2.51E+02,4.16E+02,1.40E+00,0.748,81.9796977,111.4775043
+36,GPP,Gross Primary Productivity,µmolCO2 m-2 s-1,-30,100,106.5,-36.5,130,93,80,-2.22E+01,-2.25E+01,7.53E+01,7.92E+01,0.00E+00,0,15.330496,19.421
+37,H,Sensible heat turbulent flux (no storage correction),W m-2,-450,900,967.5,-517.5,1350,454,381,-4.52E+02,-6.90E+02,7.59E+02,1.04E+03,1.74E+01,9.1969625,207.0755,245.3998045
+38,H_SSITC_TEST,"Results of the quality flagging for H according to Foken et al 2004, based on a combination of Steady State and Integral Turbulence Characteristics tests by Foken and Wichura (1996) (i.e., 0, 1, 2)",nondimensional,0,2,2.1,-0.1,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+39,H2O,Water (H2O) vapor in mole fraction of wet air,mmolH2O mol-1,0,100,105,-5,100,654,296,-2.61E-01,-3.04E+01,5.25E+01,7.27E+01,3.13E+00,2.25,16.9260896,19.02383
+40,H2O_MIXING_RATIO,Water (H2O) vapor in mole fraction of dry air,mmolH2O mol-1,0,100,105,-5,100,381,74,9.73E-06,-4.19E+01,4.31E+01,4.45E+01,3.33E+00,3.20500106,17.7382778,19.7769
+41,H2O_SIGMA,Standard deviation of water vapor mole fraction,mmolH2O mol-1,0,15,15.75,-0.75,15,25,24,0.00E+00,0.00E+00,1.17E+01,1.20E+01,8.99E-02,0.08838687,1.5151685,1.8036225
+42,LE,Latent heat turbulent flux (no storage correction),W m-2,-450,900,967.5,-517.5,1350,456,373,-4.23E+02,-8.37E+02,8.00E+02,9.40E+02,9.79E+00,6.9618235,176.2139767,199.8073684
+43,LE_SSITC_TEST,"Results of the quality flagging for LE according to Foken et al 2004, based on a combination of Steady State and Integral Turbulence Characteristics tests by Foken and Wichura (1996) (i.e., 0, 1, 2)",nondimensional,0,2,2.1,-0.1,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+44,LEAF_WET,"Leaf wetness, range 0-100",%,0,100,105,-5,100,28,5,-6.61E-01,-6.61E-01,1.11E+02,1.11E+02,0.00E+00,0,100,100
+45,LW_BC_IN,"Longwave radiation, below canopy incoming",W m-2,50,600,627.5,22.5,550,50,50,1.22E+02,1.18E+02,5.38E+02,5.57E+02,2.93E+01,24.9,117.621,121.1
+46,LW_BC_OUT,"Longwave radiation, below canopy outgoing",W m-2,100,750,782.5,67.5,650,50,50,1.62E+02,1.50E+02,7.36E+02,7.40E+02,2.98E+01,19.6,122.626,123.9
+47,LW_IN,"Longwave radiation, incoming",W m-2,50,600,627.5,22.5,550,287,266,1.01E+02,6.69E+01,5.65E+02,5.95E+02,3.23E+01,16.8410906,106.226,109.1
+48,LW_OUT,"Longwave radiation, outgoing",W m-2,100,750,782.5,67.5,650,283,261,1.50E+02,1.43E+02,6.75E+02,7.37E+02,2.74E+01,15.8703535,117.4243509,129.47
+49,MCRI,"Carotenoid Reflectance Index (Gitelson et al., 2002)",nondimensional,0,10,10.5,-0.5,10,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+50,MO_LENGTH,Monin-Obukhov length,m,NA,NA,NA,NA,NA,115,112,-3.97E+09,-4.31E+16,5.49E+09,4.39E+16,4.75E-01,0.05833885,447.3120652,498.882
+51,MTCI,"Meris Terrestrial Chlorophyll Index (Dash and Curran, 2004)",nondimensional,0,10,10.5,-0.5,10,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+52,N2O,Nitrous Oxide (N2O) mole fraction in wet air,nmolN2O mol-1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+53,N2O_MIXING_RATIO,Nitrous Oxide (N2O) in mole fraction of dry air,nmolN2O mol-1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+54,NDVI,Normalized Difference Vegetation Index,nondimensional,-1,1,1.1,-1.1,2,10,10,-5.54E-01,-5.62E-01,9.92E-01,1.00E+00,5.36E-02,0.05,0.5429563,0.557
+55,NEE,Net Ecosystem Exchange,µmolCO2 m-2 s-1,-100,100,110,-110,200,202,152,-7.94E+01,-8.91E+01,7.63E+01,9.42E+01,4.65E-01,0.308,18.7011978,29.0175
+56,NETRAD,Net radiation,W m-2,-200,1100,1165,-265,1300,400,347,-1.91E+02,-4.09E+02,9.84E+02,1.43E+03,3.21E+01,16.415,403.0734864,493.83025
+57,NIRV,"Near Infrared Vegetation Index (Badgley et al., 2017)",W m-2 sr-1 nm-1,0,2,2.1,-0.1,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+58,NO,Nitric oxide (NO) mole fraction in wet air,nmolNO mol-1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+59,NO2,Nitrogen dioxide (NO2) mole fraction in wet air,nmolNO2 mol-1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+60,O3,Ozone (O3) mole fraction in wet air,nmolO3 mol-1,0,NA,NA,NA,NA,8,1,-1.57E+00,-1.63E+00,9.20E+01,9.20E+01,1.52E+01,15.1385,19.210725,19.227
+61,P,Precipitation,mm,0,50,52.5,-2.5,50,303,273,0.00E+00,0.00E+00,1.62E+01,1.66E+01,NA,NA,NA,NA
+62,P_RAIN,Rainfall,mm,0,50,52.5,-2.5,50,77,66,0.00E+00,0.00E+00,2.51E+01,4.44E+01,NA,NA,NA,NA
+63,P_SNOW,Snowfall,mm,0,50,52.5,-2.5,50,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+64,PA,Atmospheric pressure,kPa,60,105,107.25,57.75,45,400,365,6.67E+01,5.65E+01,1.05E+02,1.06E+02,1.61E-01,0.07329275,1.601,4.3
+65,PBLH,Planetary boundary layer height,m,0,3000,3150,-150,3000,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+66,PCH4,Dissolved methane (CH4) in water,nmolCH4 mol-1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+67,PCO2,Dissolved carbon dioxide (CO2) in water,µmolCO2 mol-1,0,10000,10500,-500,10000,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+68,PN2O,Dissolved nitrous oxide (N2O) in water,nmolN2O mol-1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+69,PPFD_BC_IN,"Photosynthetic photon flux density, below canopy incoming",µmolPhoton m-2 s-1,0,2400,2520,-120,2400,152,57,-8.91E+00,-1.75E+01,2.31E+03,2.46E+03,4.83E+00,3.22,754.8616,784.5
+70,PPFD_BC_OUT,"Photosynthetic photon flux density, below canopy outgoing",µmolPhoton m-2 s-1,0,2000,2100,-100,2000,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+71,PPFD_DIF,"Photosynthetic photon flux density, diffuse incoming",µmolPhoton m-2 s-1,0,1400,1470,-70,1400,34,34,-7.24E+00,-8.90E+00,1.38E+03,1.38E+03,1.32E+02,131.4,271.5573965,275.0237
+72,PPFD_DIR,"Photosynthetic photon flux density, direct incoming",µmolPhoton m-2 s-1,0,2400,2520,-120,2400,11,11,-4.59E+01,-5.08E+01,2.17E+03,2.17E+03,6.67E+01,65.6345,1109.75,1111.4
+73,PPFD_IN,"Photosynthetic photon flux density, incoming",µmolPhoton m-2 s-1,0,2400,2520,-120,2400,598,331,-2.38E+01,-6.50E+01,2.31E+03,2.51E+03,1.57E+01,5.37,1027.583893,1123.91
+74,PPFD_OUT,"Photosynthetic photon flux density, outgoing",µmolPhoton m-2 s-1,0,2000,2100,-100,2000,211,184,-2.39E+01,-5.32E+01,1.46E+03,1.90E+03,1.57E+01,0,146.81775,169.125
+75,PPFD_UW_IN,"Photosynthetic photon flux density, underwater, incoming",µmolPhotons m-2 s-1,0,2400,2520,-120,2400,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+76,PRI,Photochemical Reflectance Index,nondimensional,-1,1,1.1,-1.1,2,5,5,-9.96E-01,-1.00E+00,9.88E-01,1.00E+00,7.08E-02,0.069,0.2686816,0.27196
+77,R_UVA,"UVA radiation, incoming",W m-2,0,85,89.25,-4.25,85,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+78,R_UVB,"UVB radiation, incoming",W m-2,0,20,21,-1,20,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+79,RECO,Ecosystem Respiration,µmolCO2 m-2 s-1,-20,50,53.5,-23.5,70,101,90,-1.40E+01,-1.41E+01,3.04E+01,4.46E+01,3.60E-01,0.186755,5.2,7.4701898
+80,REDCI,Red Edge Chlorophyll Index,nondimensional,0,10,10.5,-0.5,10,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+81,REP,"Red Edge Position (Dash and Curran, 2004)",nm,400,800,820,380,400,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+82,RH,"Relative humidity, range 0-100",%,0,100,105,-5,100,560,393,0.00E+00,-3.00E+00,1.04E+02,1.07E+02,1.34E+01,11.2,49.753,53.1114785
+83,RUNOFF,Run off,mm,0,200,210,-10,200,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+84,SAP_DT,Difference of probes temperature for sapflow measurements,deg C,-10,10,11,-11,20,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+85,SAP_FLOW,Sap flow,mmolH2O m-2 s-1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+86,SB,Heat storage flux in biomass,W m-2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+87,SC,Carbon Dioxide (CO2) storage flux,µmolCO2 m-2 s-1,-100,100,110,-110,200,193,177,-3.49E+02,-5.21E+02,4.62E+12,4.53E+14,0.00E+00,0,6.5067133,10.840942
+88,SCH4,Methane (CH4) storage flux,nmolCH4 m-2 s-1,NA,NA,NA,NA,NA,14,14,-2.21E+03,-2.44E+03,6.57E+02,6.81E+02,3.65E-01,0.354,6.59243,6.6967883
+89,SG,Heat storage flux in the soil above the soil heat fluxes measurement,W m-2,-100,250,267.5,-117.5,350,25,13,-9.72E+01,-9.89E+01,2.39E+02,2.42E+02,1.28E+00,1.27,54.7877791,66.4929375
+90,SH,Sensible heat (H) storage flux,W m-2,-150,150,165,-165,300,134,129,-1.34E+02,-1.95E+02,1.32E+02,3.95E+02,6.79E-01,0.3515,32.0162957,85.5044
+91,SLE,Latent heat (LE) storage flux,W m-2,-150,150,165,-165,300,119,114,-7.81E+02,-5.39E+03,7.72E+02,5.45E+04,3.14E-01,0.267,26.1254043,47.902785
+92,SN2O,Nitrous oxide (N2O) storage flux,nmolN2O m-2 s-1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+93,SNO,Nitric oxide (NO) storage flux,nmolNO m-2 s-1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+94,SNO2,Nitrogen dioxide (NO2) storage flux,nmolNO2 m-2 s-1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+95,SO2,Sulfur Dioxide (SO2) mole fraction in wet air,nmolSO2 mol-1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+96,SO3,Ozone (O3) storage flux,nmolO3 m-2 s-1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+97,SPEC_NIR_IN,"Radiation (near infra-red band), incoming (hemispherical)",W m-2 nm-1,0,2,2.1,-0.1,2,9,9,0.00E+00,0.00E+00,7.57E+00,8.12E+00,3.36E-01,0.335,3.437438,3.68965
+98,SPEC_NIR_OUT,"Radiation (near infra-red band), outgoing",W m-2 sr-1 nm-1,0,2,2.1,-0.1,2,8,8,0.00E+00,0.00E+00,2.19E+00,2.32E+00,4.67E-02,0.041,0.5679168,0.59576
+99,SPEC_NIR_REFL,Reflectance (near infra-red band),nondimensional,0,1,1.05,-0.05,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+100,SPEC_PRI_REF_IN,"Radiation for PRI reference band (e.g., 570 nm), incoming (hemispherical)",W m-2 nm-1,0,2,2.1,-0.1,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+101,SPEC_PRI_REF_OUT,"Radiation for PRI reference band (e.g., 570 nm), outgoing",W m-2 sr-1 nm-1,0,2,2.1,-0.1,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+102,SPEC_PRI_REF_REFL,"Reflectance for PRI reference band (e.g., 570 nm)",nondimensional,0,1,1.05,-0.05,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+103,SPEC_PRI_TGT_IN,"Radiation for PRI target band (e.g., 531 nm), incoming (hemispherical)",W m-2 nm-1,0,2,2.1,-0.1,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+104,SPEC_PRI_TGT_OUT,"Radiation for PRI target band (e.g., 531 nm), outgoing",W m-2 sr-1 nm-1,0,2,2.1,-0.1,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+105,SPEC_PRI_TGT_REFL,"Reflectance for PRI target band (e.g., 531 nm)",nondimensional,0,1,1.05,-0.05,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+106,SPEC_RED_IN,"Radiation (red band), incoming (hemispherical)",W m-2 nm-1,0,2,2.1,-0.1,2,9,9,0.00E+00,0.00E+00,7.98E+00,8.53E+00,4.18E-01,0.41791667,2.577584,2.7472
+107,SPEC_RED_OUT,"Radiation (red band), outgoing",W m-2 sr-1 nm-1,0,2,2.1,-0.1,2,9,9,0.00E+00,0.00E+00,1.16E+00,1.23E+00,1.59E-02,0.015025,0.5076,0.544
+108,SPEC_RED_REFL,Reflectance (red band),nondimensional,0,1,1.05,-0.05,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+109,SR,Simple Ratio,nondimensional,0,10,10.5,-0.5,10,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+110,STEMFLOW,Excess precipitation that drains from outlying branches and leaves and is channeled through the stems to the ground,mm,0,200,210,-10,200,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+111,SW_BC_IN,"Shortwave radiation, below canopy incoming",W m-2,0,1300,1365,-65,1300,13,4,-7.69E+00,-7.97E+00,9.66E+02,9.95E+02,1.14E+01,11.32273259,98.3336547,99.7415887
+112,SW_BC_OUT,"Shortwave radiation, below canopy outgoing",W m-2,0,800,840,-40,800,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+113,SW_DIF,"Shortwave radiation, diffuse incoming",W m-2,0,750,787.5,-37.5,750,51,51,0.00E+00,0.00E+00,6.75E+02,6.84E+02,6.84E+01,68,144.4875,152.275
+114,SW_DIR,"Shortwave radiation, direct incoming",W m-2,0,1300,1365,-65,1300,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+115,SW_IN,"Shortwave radiation, incoming",W m-2,0,1300,1365,-65,1300,466,337,-1.65E+01,-3.47E+01,1.17E+03,1.20E+03,1.13E+02,36.4485,523.8285,565.8
+116,SW_OUT,"Shortwave radiation, outgoing",W m-2,0,800,840,-40,800,332,304,-8.42E+00,-1.65E+01,6.64E+02,8.14E+02,1.76E+01,9.9,111.1193332,198.7241388
+117,SWC,"Soil water content (volumetric), range 0-100",%,0,100,105,-5,100,2336,270,0.00E+00,-6.68E+00,9.93E+01,1.08E+02,5.09E-01,0.059,57.6647082,82.499999
+118,SWP,Soil water potential,kPa,-750,0,37.5,-787.5,750,13,5,-5.96E+03,-5.97E+03,0.00E+00,0.00E+00,1.14E+00,1.05,3150.8656,3208.27
+119,T_BOLE,Bole temperature,deg C,-50,70,76,-56,120,39,11,-4.34E+01,-4.41E+01,5.45E+01,5.45E+01,9.58E+00,9.526,24.3804355,27.10495
+120,T_CANOPY,Temperature of the canopy and/or surface underneath the sensor,deg C,-50,70,76,-56,120,229,72,-4.40E+01,-4.73E+01,6.61E+01,6.81E+01,3.44E+00,2.475,25.4768008,26.7109145
+121,T_SONIC,Sonic temperature,deg C,-50,50,55,-55,100,232,219,-3.58E+01,-3.73E+01,4.35E+01,4.45E+01,2.72E+00,2.2716667,22.2354937,24.6565
+122,T_SONIC_SIGMA,Standard deviation of sonic temperature,deg C,0,5,5.25,-0.25,5,155,150,0.00E+00,0.00E+00,3.89E+01,8.43E+01,1.46E-01,0.09986225,0.9249387,1.3391
+123,TA,Air temperature,deg C,-50,50,55,-55,100,942,399,-4.39E+01,-4.50E+01,4.18E+01,4.78E+01,2.76E+00,1.6928475,25.7457804,29.70125
+124,TAU,Momentum flux,kg m-1 s-2,-10,2,2.6,-10.6,12,129,120,-2.58E+01,-1.50E+02,2.59E+00,3.15E+00,2.72E-02,0.015594,1.3323436,1.3782488
+125,TAU_SSITC_TEST,"Results of the quality flagging for TAU according to Foken et al 2004, based on a combination of Steady State and Integral Turbulence Characteristics tests by Foken and Wichura (1996) (i.e., 0, 1, 2)",nondimensional,0,2,2.1,-0.1,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+126,TCARI,Transformed Chlorophyll Absorption in Reflectance Index,nondimensional,0,10,10.5,-0.5,10,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+127,THROUGHFALL,Excess precipitation that passes directly through a canopy or drips from wet leaves to the ground,mm,0,20,21,-1,20,155,37,0.00E+00,0.00E+00,1.23E+01,1.23E+01,NA,NA,NA,NA
+128,TIMESTAMP,ISO timestamp – short format,YYYYMMDDHHMM,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+129,TIMESTAMP_END,ISO timestamp end of averaging period - short format (12-digit integer),YYYYMMDDHHMM,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+130,TIMESTAMP_START,ISO timestamp start of averaging period - short format (12-digit integer),YYYYMMDDHHMM,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+131,TS,Soil temperature,deg C,-40,65,70.25,-45.25,105,3452,325,-2.32E+01,-3.75E+01,5.15E+01,6.39E+01,5.78E-01,0.025,20.0467625,21.8275
+132,TSN,Snow temperature,deg C,-40,4,6.2,-42.2,44,29,4,-3.73E+01,-3.75E+01,2.48E+01,2.65E+01,2.20E+00,2.1325645,7.304794,7.5019
+133,TW,Water temperature,deg C,-20,50,53.5,-23.5,70,18,10,-1.76E+01,-1.97E+01,3.40E+01,3.43E+01,4.83E-01,0.4794,17.4309213,17.4324065
+134,U_SIGMA,Standard deviation of velocity fluctuations (towards main-wind direction after coordinates rotation),m s-1,0,12,12.6,-0.6,12,134,129,5.87E-09,0.00E+00,6.21E+00,3.14E+01,2.78E-01,0.2155535,0.957247,1.1007
+135,USTAR,Friction velocity,m s-1,0,8,8.4,-0.4,8,409,391,0.00E+00,-4.00E-02,7.42E+00,1.25E+01,1.32E-01,0.06940243,0.7674367,0.8252538
+136,V_SIGMA,Standard deviation of lateral velocity fluctuations (cross main-wind direction after coordinates rotation),m s-1,0,10,10.5,-0.5,10,197,192,0.00E+00,0.00E+00,9.93E+00,2.21E+01,2.88E-01,0.24354675,0.9606143,1.3203479
+137,VPD,Vapor Pressure Deficit,hPa,0,80,84,-4,80,343,296,-1.08E+00,-2.28E+00,7.05E+01,7.87E+01,3.50E-01,0.039,19.768914,20.6
+138,W_SIGMA,Standard deviation of vertical velocity fluctuations,m s-1,0,5,5.25,-0.25,5,154,149,0.00E+00,0.00E+00,5.80E+00,1.60E+01,1.18E-01,0.09977745,0.6044936,0.6784
+139,WD,Wind direction,Decimal degrees,0,360,378,-18,360,632,394,0.00E+00,-3.02E-01,3.60E+02,3.64E+02,4.05E+01,29.08,262.1920268,327.61
+140,WD_SIGMA,"Standard deviation of wind direction (Yamartino, 1984)",decimal degree,0,180,189,-9,180,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+141,WS,Wind speed,m s-1,0,40,42,-2,40,679,396,0.00E+00,-1.02E-01,2.51E+01,3.18E+01,1.68E-01,0.08,5.2005024,10.8898785
+142,WS_MAX,maximum WS in the averaging period,m s-1,0,50,52.5,-2.5,50,316,123,1.27E-03,0.00E+00,3.17E+01,3.71E+01,4.38E-01,0.33,8.2079789,13.429729
+143,WTD,Water table depth,m,-10,10,11,-11,20,52,45,-1.93E+01,-2.69E+01,1.96E+00,2.05E+00,3.37E-02,0.03039,1.8989558,2.0007735
+144,ZL,Monin-Obukhov Stability parameter,nondimensional,NA,NA,NA,NA,NA,147,140,-1.25E+04,-1.94E+04,1.89E+03,4.49E+03,3.35E-02,0.009,0.9793215,16.5397838
