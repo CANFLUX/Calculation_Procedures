@@ -1,6 +1,10 @@
 # Written by June Skeeter
 # March 2024
 
+# May 12, 2026 (Karolina)
+#    - The variables with *n1_n2_n3_F were renamed to *_F_n1_n2_n3 to match the Ameriflux new naming strategy.
+# Sept 16, 2025 (Rosie)
+#    - Input filled met variables where they exist, at height closest to EC flux measurement height (1_2_1 for DSM).
 # Dec 17, 2024 (Zoran)
 #    - Added northOffset: 195 based on ghg Metadata.
 # Mar 31, 2025 (Paul)
@@ -18,30 +22,71 @@ Processing:
   ThirdStage:
     Fluxes:
       # Names of flux variables as they come in from second stage
-      # Putting NULL will remove the flux from consideration
+      # For fluxes that do not apply, change the key-value pair to NULL (see FNO2 example)
+      # *** DOUBLE CHECK FLUX NAMES ON RHS MATCH SECOND STAGE TRACES ***
       H: H
       LE: LE
       NEE: FC
       FCH4: FCH4
-    JS_Moving_Z:
-      Run: True
-    Papale_Spike_Removal:
-      Run: True
-    Storage_Correction: 
-      Run: True
-    REddyProc:
+      FNO2: NULL
+    Met_Gap_Filling:
+      Linear_Interpolation:
+        # *** DOUBLE CHECK VARIABLE NAMES ON RHS MATCH SECOND STAGE TRACE NAMES ***
+        Fill_Vars: TA_F_1_2_1,RH_1_2_1,VPD_1_2_1
+    Standard_Cleaning:
+      # Filter out values  #+/- wakeFilter of northOffset +/- 180 degrees
+      wakeFilter: 30
+      # If you do not want fluxes filtered during rain events, set to NULL
+      precipCutOff: 0
+    Storage_Correction:
+      # If storage terms are missing, then set Run: FALSE
       Run: TRUE
+    JS_Moving_Z: 
+      # You can turn off z-score filtering by setting Run: FALSE
+      Run: TRUE
+    Papale_Spike_Removal:
+      # You can turn off MAD filtering by setting Run: FALSE
+      Run: TRUE
+      # creates a sliding window MAD for outlier detection
+      #window: 6
+      # conservative value as per literature
+      #z_thresh: 7
+    REddyProc:
+      # You can turn off REddyProc by setting Run: FALSE
+      # Setting Run: FALSE would normally only be for diagnostic purposes.
+      Run: TRUE
+      Ustar_filtering:
+        # Keep "run_defaults" as TRUE to run "fast" ustar filtering
+        # If run_defaults = FALSE, conduct "full_uncertainty" 
+        run_defaults: TRUE
       vars_in:
+        # Variables to feed to REddyProc (from second stage)
+        # Key is REddyProc name, val is database name (or previous output from up the processing chain)
+        # Fluxes will be whatever the most "up to date" filtered variable is
+        # e.g., NEE is Storage corrected, spikes removed (Papale 2006), etc.
+        #
+        # *** Double check that variable names (on the right) match Second Stage naming ***
+        # *** If a standard flux is missing set key-val to NULL (e.g. FCH4: NULL) ***
         NEE: NEE
         LE: LE
         H: H
         FCH4: FCH4
-        Rg: SW_IN_1_1_1
-        Tair: TA_1_1_1
-        VPD: VPD_1_1_1
+        Rg: SW_IN_F_1_1_1
+        Tair: TA_F_1_2_1
+        VPD: VPD_1_2_1
         Ustar: USTAR
         season: season
+        # Add additional variables here if needed
+        # rH: RH_1_1_1
+      # MDS gap filling (will only fill these variables *if* present in "vars_in")
       MDSGapFill:
+        # List of Ustar-dependent variables on which to gap-fill using MDS
+        UStarScens:
+          - NEE
+          - LE
+          - H
+          - FCH4
+        # List of variables on which to gap-fill using MDS
         basic:
           - Rg
           - Tair
@@ -49,4 +94,5 @@ Processing:
       Flux_Partitioning:
         # Turn flux partitioning calculations off to reduce third stage run time for diagnosing errors.
         # Turn flux partitioning calculations off if GPP and Reco are not wanted.
-        Run: True
+        # You can turn off flux partitioning calculations by setting Run: FALSE
+        Run: TRUE
