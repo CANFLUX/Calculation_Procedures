@@ -1,8 +1,6 @@
 # Written by Sara Knox
 # March 2024
 
-# May 22, 2025 (Zoran)
-#   - Added AmerifluxID.
 # Dec 17, 2024 (Zoran)
 #    - Added northOffset: 0 based on ghg Metadata.
 
@@ -28,7 +26,7 @@ Processing:
     Met_Gap_Filling:
       Linear_Interpolation:
         # *** DOUBLE CHECK VARIABLE NAMES ON RHS MATCH SECOND STAGE TRACE NAMES ***
-        Fill_Vars: TA_1_1_1,RH_1_1_1,VPD_1_1_1
+        Fill_Vars: TA_F_1_1_1,RH_F_1_1_1,VPD_F_1_1_1
     Standard_Cleaning:
       # Filter out values  #+/- wakeFilter of northOffset +/- 180 degrees
       wakeFilter: 30
@@ -63,9 +61,9 @@ Processing:
         LE: LE
         H: H
         FCH4: FCH4
-        Rg: SW_IN_1_1_1
-        Tair: TA_1_1_1
-        VPD: VPD_1_1_1
+        Rg: SW_IN_F_1_1_1
+        Tair: TA_F_1_1_1
+        VPD: VPD_F_1_1_1
         Ustar: USTAR
         season: season
         # Add additional variables here if needed
