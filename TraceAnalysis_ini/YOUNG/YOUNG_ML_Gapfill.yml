@@ -1,0 +1,11 @@
+traces:
+  fch4:
+    preds_trace:
+      - ThirdStage/H_PI_SC_JSZ_MAD_RP_uStar_f
+      - ThirdStage/LE_PI_SC_JSZ_MAD_RP_uStar_f
+      - ThirdStage/TA_F_1_1_1
+      - ThirdStage/SW_IN_F_1_1_1
+  nee: NULL
+  le: NULL
+  h: NULL
+  fno2: NULL
